@@ -18,7 +18,7 @@
 
 
 # E-Commerce Growth Analytics (Approach & Findings)
-A comprehensive data analytics project analyzing website micro-experiments and customer behavior using PostgreSQL and Python, uncovering actionable insights to optimize website conversion, customer targeting, and revenue growth.
+A comprehensive Data Analytics Project analyzing website micro-experiments and customer behavior using PostgreSQL and Python, uncovering actionable insights to optimize website conversion, customer targeting, and revenue growth.
 
 ---
 
