@@ -2,7 +2,7 @@ select * from ecom.aggregated_table; /*FINAL TABLE FOR REFFERENCE */
 
 select * from ecom.experiments;
 /*These 3 below are the initial Company Data - not with Experimnets - I'm Guessing*/
-
+ 
 /* Experiments table columns present: experiment_id, element_tested, start_date, end_date, effects_on_conv */
 
 select * from ecom.orders; /*has user_id column*/
