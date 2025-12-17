@@ -88,7 +88,8 @@ While Version B shows a slightly higher average CTR overall, lift analysis revea
 | **2**      | **+26.65%** | Very strong improvement — B clearly wins |
 | **5**      | **+23.52%** | Large uplift, B is much better           |
 | **1**      | **+11.92%** | Solid improvement                        |  
-| 3 out of 8 experiments show meaningful CTR improvement.             |
+
+3 out of 8 experiments show meaningful CTR improvement.         
 
  Neutral / negative experiments
 | Experiment | Lift    | Interpretation           |
@@ -98,7 +99,8 @@ While Version B shows a slightly higher average CTR overall, lift analysis revea
 | 7          | −8.99%  | B performs worse         |
 | 3          | −9.00%  | B performs worse         |
 | 8          | −10.15% | Worst performer          |
-|Half the experiments hurt CTR when switching to B.|
+
+Half the experiments hurt CTR when switching to B.
 
 </details> 
 
