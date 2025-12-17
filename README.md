@@ -70,8 +70,6 @@ This project aims to:
 The EDA builds a **Complete Vendor Intelligence Foundation**, revealing — setting the stage for deeper testing and the final BI dashboard & reporting.
 
 <details> <summary><b> Key EDAs Performed in Python (Click to Expand)</b></summary>
-
-<details> <summary><b> Key EDA: Code & Output Summary  (Click to Expand)</b></summary>
  
 #### **Code Used in ```Python```**
 
@@ -87,7 +85,8 @@ The EDA builds a **Complete Vendor Intelligence Foundation**, revealing — sett
 - Overall, Version B delivers stronger bottom-line performance, even when early-funnel signals are mixed.
   
 
-```
+<details> <summary><b> Key EDA: Code & Output Summary  (Click to Expand)</b></summary>
+ 
 #### **Output Summary**
 While Version B shows a slightly higher average CTR overall, experiment-level lift analysis reveals that only 3 out of 8 experiments experienced meaningful improvements. Several experiments showed neutral or negative impact, indicating that Version B’s effectiveness is experiment-specific rather than universally superior.ent rather than universally superior.
 
