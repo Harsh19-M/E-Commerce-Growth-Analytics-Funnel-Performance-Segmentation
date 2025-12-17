@@ -82,11 +82,23 @@ The EDA builds a **Complete Vendor Intelligence Foundation**, revealing — sett
 
 While Version B shows a slightly higher average CTR overall, lift analysis reveals that only 3 out of 8 experiments experienced meaningful improvements. Several experiments showed neutral or negative impact, indicating that Version B’s effectiveness is context-dependent rather than universally superior.
 
-| Experiment | Lift        | Interpretation                           |
+🟢 Top positive lift experiments
+| Experiment | Lift        | Interpretation                           | 
 | ---------- | ----------- | ---------------------------------------- |
 | **2**      | **+26.65%** | Very strong improvement — B clearly wins |
 | **5**      | **+23.52%** | Large uplift, B is much better           |
-| **1**      | **+11.92%** | Solid improvement                        |
+| **1**      | **+11.92%** | Solid improvement                        |  
+3 out of 8 experiments show meaningful CTR improvement.
+
+🔴 Neutral / negative experiments
+| Experiment | Lift    | Interpretation           |
+| ---------- | ------- | ------------------------ |
+| 6          | −0.40%  | No meaningful difference |
+| 4          | −8.47%  | B performs worse         |
+| 7          | −8.99%  | B performs worse         |
+| 3          | −9.00%  | B performs worse         |
+| 8          | −10.15% | Worst performer          |
+Half the experiments hurt CTR when switching to B.
 
 </details> 
 
