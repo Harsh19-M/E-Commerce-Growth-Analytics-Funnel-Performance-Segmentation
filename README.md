@@ -63,6 +63,7 @@ This project aims to:
 - Connected to the
 - 
 ### **Exploration (EDA) in Python**
+
 **EDA #1 — Experiment Exposure & Balance (Validity Check)**
 - User and session exposure across Version A and B is well balanced (≈3% user difference, ≈2% session difference), indicating no allocation bias.
 - All experiments have sufficient exposure with no missing or abnormal session distributions, supporting valid downstream comparison.
