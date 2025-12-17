@@ -73,7 +73,7 @@ The EDA builds a **Complete Vendor Intelligence Foundation**, revealing — sett
  
 # Experiment-level Statistical Exploration
 
-**Final Experiment Insights (Lift% Summaries):**
+**Experiment Insights (Lift% Summaries):**
 
 - Completed Purchase is the primary decision metric, as it directly reflects revenue impact.
 - Version B shows higher average completed purchase rates compared to Version A across experiments.
