@@ -71,8 +71,6 @@ The EDA builds a **Complete Vendor Intelligence Foundation**, revealing — sett
 
 <details> <summary><b> Key EDAs Performed in Python (Click to Expand)</b></summary>
  
-#### **Code Used in ```Python```**
-
 # Experiment-level Statistical Exploration
 
 **Final Experiment Insights (Lift% Summaries):**
@@ -83,7 +81,8 @@ The EDA builds a **Complete Vendor Intelligence Foundation**, revealing — sett
 - Early-funnel metrics (CTR, Add-to-Cart) are not reliable decision criteria on their own — several experiments show lower or neutral engagement but higher final conversions, suggesting improved traffic quality rather than volume.
 - Add-to-Cart serves as a useful mid-funnel diagnostic, helping explain conversion outcomes but should not override purchase performance.
 - Overall, Version B delivers stronger bottom-line performance, even when early-funnel signals are mixed.
-  
+
+#### **Code Used in ```Python```**
 
 <details> <summary><b> Key EDA: Code & Output Summary  (Click to Expand)</b></summary>
  
