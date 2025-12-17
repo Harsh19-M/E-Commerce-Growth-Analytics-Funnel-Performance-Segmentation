@@ -65,7 +65,7 @@ This project aims to:
 - 
 ### **Initial Exploration (EDA) in Python**
 
-- Conducted a full **vendor-level EDA**
+- Conducted a full **Experiment-level EDA**
 - 
 The EDA builds a **complete vendor intelligence foundation**, revealing — setting the stage for deeper testing and the final BI dashboard & reporting.
 
