@@ -202,7 +202,7 @@ click_TBeh
 | 5             |  0.2561 |  0.3163 |       **+23.52%** | Large uplift, B is much better           |
 | 1             |  0.3475 |  0.3889 |       **+11.92%** | Solid improvement                        |
 
-Quick Takeaway: 3 out of 8 experiments show meaningful CTR improvement.         
+Quick Takeaway: 3 out of 8 experiments show meaningful CTR improvement.          
 
  **Neutral / negative experiments**
 | experiment_id | A (CTR) | B (CTR) | Click_TBeh_Lift % | Interpretation           |
