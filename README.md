@@ -81,8 +81,8 @@ This project aims to:
 - Completed Purchase lift was used as the primary decision metric due to its direct revenue impact.
 - 5 out of 8 experiments show strong positive purchase lift under Version B, indicating consistent conversion improvement.
 - Some experiments show negative CTR or Add-to-Cart lift but positive purchase lift, reinforcing the importance of evaluating full-funnel outcomes.
-**NOTE** Detailed lift tables and experiment-level interpretations below.
 
+**NOTE** Detailed lift tables and experiment-level interpretations below.
 
 **NOTE:** Detailed experiment-level metrics, rates, and lift analysis are shown below.
 
