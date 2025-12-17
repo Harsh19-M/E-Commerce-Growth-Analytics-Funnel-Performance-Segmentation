@@ -75,8 +75,8 @@ Final Experiment Insights (Lift% Summaries):
 - 5 out of 8 experiments demonstrate strong positive lift in completed purchases, indicating that Version B often converts higher-quality buyers.
 - Early-funnel metrics (CTR, Add-to-Cart) are not reliable decision criteria on their own — several experiments show lower or neutral engagement but higher final conversions, suggesting improved traffic quality rather than volume.
 - Add-to-Cart serves as a useful mid-funnel diagnostic, helping explain conversion outcomes but should not override purchase performance.
-
-Overall, Version B delivers stronger bottom-line performance, even when early-funnel signals are mixed.
+- Overall, Version B delivers stronger bottom-line performance, even when early-funnel signals are mixed.
+  
 <details> <summary><b> Key EDAs Performed in Python (Click to Expand)</b></summary>
 
 <details> <summary><b> Key EDA: Code & Output Summary  (Click to Expand)</b></summary>
