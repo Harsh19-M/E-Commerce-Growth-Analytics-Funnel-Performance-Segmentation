@@ -68,15 +68,15 @@ This project aims to:
 - Conducted a full **Experiment-level EDA**
 - 
 The EDA builds a **Complete Vendor Intelligence Foundation**, revealing — setting the stage for deeper testing and the final BI dashboard & reporting.
-Key Experiment Insights (Across Funnel)
+
+Final Experiment Insights (Lift% Summaries):
 - Completed Purchase is the primary decision metric, as it directly reflects revenue impact.
 - Version B shows higher average completed purchase rates compared to Version A across experiments.
-- 5 out of 8 experiments show strong positive lift in completed purchases, indicating B often converts better buyers.
-- Some experiments show negative CTR or Add-to-Cart lift but positive purchase lift, suggesting quality of traffic improved, not just volume.
-- Click behavior alone is insufficient — several experiments with lower CTR still resulted in higher final conversions.
-- Add-to-Cart lift acts as a mid-funnel diagnostic, helping explain why certain experiments succeed or fail.
-- Overall, Version B demonstrates stronger bottom-line performance, even when early-funnel metrics are mixed.
+- 5 out of 8 experiments demonstrate strong positive lift in completed purchases, indicating that Version B often converts higher-quality buyers.
+- Early-funnel metrics (CTR, Add-to-Cart) are not reliable decision criteria on their own — several experiments show lower or neutral engagement but higher final conversions, suggesting improved traffic quality rather than volume.
+- Add-to-Cart serves as a useful mid-funnel diagnostic, helping explain conversion outcomes but should not override purchase performance.
 
+Overall, Version B delivers stronger bottom-line performance, even when early-funnel signals are mixed.
 <details> <summary><b> Key EDAs Performed in Python (Click to Expand)</b></summary>
 
 <details> <summary><b> Key EDA: Code & Output Summary  (Click to Expand)</b></summary>
