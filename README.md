@@ -121,8 +121,6 @@ A minority of experiments regress, reinforcing the importance of experiment-leve
 
 <details> <summary><b> Key EDA: Code & Output Summary For Click Through Behaviour Lift Analysis and Add-to-Cart Lift Analysis (Click to Expand)</b></summary>
  
-#### **Output Summary**
-
 **Add-to-Cart Lift Analysis**
 #### **Code Used in ```Python```**
 ```
