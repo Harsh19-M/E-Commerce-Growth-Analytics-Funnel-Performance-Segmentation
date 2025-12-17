@@ -67,7 +67,7 @@ This project aims to:
 
 - Conducted a full **Experiment-level EDA**
 - 
-The EDA builds a **complete vendor intelligence foundation**, revealing — setting the stage for deeper testing and the final BI dashboard & reporting.
+The EDA builds a **Complete Experimental Intelligence Foundation**, revealing — setting the stage for deeper testing and the final BI dashboard & reporting.
 
 <details> <summary><b> Key EDAs Performed in Python (Click to Expand)</b></summary>
 
