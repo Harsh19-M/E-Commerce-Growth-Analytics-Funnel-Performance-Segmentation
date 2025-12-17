@@ -80,7 +80,7 @@ The EDA builds a **Complete Vendor Intelligence Foundation**, revealing — sett
 - Add-to-Cart serves as a useful mid-funnel diagnostic, helping explain conversion outcomes but should not override purchase performance.
 - Overall, Version B delivers stronger bottom-line performance, even when early-funnel signals are mixed.
 
-**Completed Purchase Lift Analysis (Primary Metric)**
+### **Completed Purchase Lift Analysis (Primary Metric)**
 
 #### **Code Used in ```Python```**
 ```
@@ -120,8 +120,10 @@ A minority of experiments regress, reinforcing the importance of experiment-leve
 
 
 <details> <summary><b> Key EDA: Code & Output Summary For Click Through Behaviour Lift Analysis and Add-to-Cart Lift Analysis (Click to Expand)</b></summary>
+ ---
  
-**Add-to-Cart Lift Analysis**
+### **Add-to-Cart Lift Analysis**
+
 #### **Code Used in ```Python```**
 ```
 Add_To_C = agg_df.pivot_table(index="experiment_id", columns="Experiment Version", values="Add_to_cart Rate")
@@ -160,7 +162,8 @@ A few experiments show weaker cart engagement, but they are outweighed by strong
 NOTE: Extremely high lift values (e.g., +192%) are influenced by low Version A baselines and should be interpreted directionally rather than absolutely.
 
 
-**Click-Through Behaviour Lift Analysis**
+### **Click-Through Behaviour Lift Analysis**
+
 #### **Code Used in ```Python```**
 
 ```
