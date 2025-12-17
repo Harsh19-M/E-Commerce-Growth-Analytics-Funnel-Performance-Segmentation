@@ -80,7 +80,7 @@ The EDA builds a **Complete Vendor Intelligence Foundation**, revealing — sett
 ```
 #### **Output Summary**
 
-“While Version B shows a slightly higher average CTR overall, lift analysis reveals that only 3 out of 8 experiments experienced meaningful improvements. Several experiments showed neutral or negative impact, indicating that Version B’s effectiveness is context-dependent rather than universally superior.”
+While Version B shows a slightly higher average CTR overall, lift analysis reveals that only 3 out of 8 experiments experienced meaningful improvements. Several experiments showed neutral or negative impact, indicating that Version B’s effectiveness is context-dependent rather than universally superior.
 
 | Experiment | Lift        | Interpretation                           |
 | ---------- | ----------- | ---------------------------------------- |
