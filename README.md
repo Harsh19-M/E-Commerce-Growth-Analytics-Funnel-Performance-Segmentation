@@ -114,7 +114,31 @@ A minority of experiments regress, reinforcing the importance of experiment-leve
  
 #### **Output Summary**
 
-**Completed Purchase Lift Analysis**
+**Add-to-Cart Lift Analysis**
+
+ **Top positive lift experiments**
+| experiment_id | A (ATC) | B (ATC) | Add_To_C_Lift % | Interpretation                               |
+| ------------- | ------: | ------: | --------------: | -------------------------------------------- |
+| 5             |  0.0244 |  0.0714 |    **+192.86%** | Massive uplift — B drives far more cart adds |
+| 1             |  0.0678 |  0.1000 |     **+47.50%** | Strong improvement — B clearly better        |
+| 7             |  0.0430 |  0.0562 |     **+30.62%** | Solid uplift in cart engagement              |
+| 6             |  0.0556 |  0.0652 |     **+17.39%** | Moderate improvement                         |
+| 2             |  0.0714 |  0.0796 |     **+11.50%** | Small but positive lift                      |
+
+Quick Takeaway:
+Most experiments show improved Add-to-Cart behavior under Version B, with a few extremely large gains driven by low A baselines.
+
+| experiment_id | A (ATC) | B (ATC) | Add_To_C_Lift % | Interpretation                |
+| ------------- | ------: | ------: | --------------: | ----------------------------- |
+| 8             |  0.0971 |  0.1031 |      **+6.19%** | Marginal improvement          |
+| 4             |  0.1228 |  0.1038 |     **−15.50%** | B performs worse              |
+| 3             |  0.0472 |  0.0353 |     **−25.18%** | Significant drop in cart adds |
+
+Quick Takeaway:
+A few experiments show weaker cart engagement, but they are outweighed by stronger positive lifts elsewhere.
+
+
+**Click-Through Behaviour Lift Analysis**
 
  **Top positive lift experiments**
 | experiment_id | A (CTR) | B (CTR) | Click_TBeh_Lift % | Interpretation                           | 
