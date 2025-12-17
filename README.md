@@ -53,10 +53,10 @@ This project aims to:
 ## Approach Overview
 ### **Project-Planning (Framework Used):** SMART & CRISP-DM  
 
-### **Initial Approach – **
+### **Initial Approach –**
 
 
-### **Aggregated Table Creation – **
+### **Aggregated Table Creation –**
 
 
 ### **Data Cleaning & Loading – PostgreSQL → Python → PostgreSQL**
