@@ -69,7 +69,16 @@ This project aims to:
 - 
 The EDA builds a **Complete Vendor Intelligence Foundation**, revealing — setting the stage for deeper testing and the final BI dashboard & reporting.
 
-Final Experiment Insights (Lift% Summaries):
+<details> <summary><b> Key EDAs Performed in Python (Click to Expand)</b></summary>
+
+<details> <summary><b> Key EDA: Code & Output Summary  (Click to Expand)</b></summary>
+ 
+#### **Code Used in ```Python```**
+
+# Experiment-level Statistical Exploration
+
+**Final Experiment Insights (Lift% Summaries):**
+
 - Completed Purchase is the primary decision metric, as it directly reflects revenue impact.
 - Version B shows higher average completed purchase rates compared to Version A across experiments.
 - 5 out of 8 experiments demonstrate strong positive lift in completed purchases, indicating that Version B often converts higher-quality buyers.
@@ -77,13 +86,6 @@ Final Experiment Insights (Lift% Summaries):
 - Add-to-Cart serves as a useful mid-funnel diagnostic, helping explain conversion outcomes but should not override purchase performance.
 - Overall, Version B delivers stronger bottom-line performance, even when early-funnel signals are mixed.
   
-<details> <summary><b> Key EDAs Performed in Python (Click to Expand)</b></summary>
-
-<details> <summary><b> Key EDA: Code & Output Summary  (Click to Expand)</b></summary>
- 
-#### **Code Used in ```Python```**
-```
-# Experiment-level statistical
 
 ```
 #### **Output Summary**
