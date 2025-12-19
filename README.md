@@ -219,6 +219,7 @@ While Version B shows a slightly higher average CTR overall, experiment-level li
 
 </details> 
 
+</details> 
 
 **EDA 5 — Funnel Drop-Off (Where do people quit?)**
 - ABCDEF
