@@ -51,7 +51,7 @@ This project aims to:
 ---
 
 ## Approach Overview
-### **Project-Planning (Framework Used):** SMART & CRISP-DM  
+### **Project-Planning (Framework Used):** Funnel Analysis Principles - Funnel Diagram - Something Like that GOES HERE  
 *(Specific | Measurable | Achievable | Relevant | Time Bound)* &<br>(Business Understanding | Data Understanding | Data Preparation | Analysis / Modeling | Evaluation | Deployment)
 
 ### **Initial Approach –**
