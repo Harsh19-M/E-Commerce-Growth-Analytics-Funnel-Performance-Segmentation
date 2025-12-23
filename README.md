@@ -238,12 +238,26 @@ Visit → Purchase rates span from approximately 8% to 27%, demonstrating that e
 - Different variants perform better at different funnel stages.
 Some variants excel at generating early interest (higher Visit → View), while others perform better at final conversion (higher Visit → Purchase), highlighting stage-specific optimization opportunities rather than a single universal winner.
 
-✅ Option 1 — README (very solid, just 1 tiny tweak)
-“This dataset is simulated and aggregated, so funnel steps should be viewed as engagement signals rather than fixed step-by-step actions. Some users complete purchases without a recorded add-to-cart event. This could happen due to direct ‘Buy Now’ flows, users who already knew what they wanted before visiting the site, or limitations in how add-to-cart actions are captured in the data.”
-
-✅ Fixed Option 2 (slide-ready)
-“Since this is a simulated and aggregated dataset, funnel stages represent user engagement rather than a strict checkout sequence. Some users purchase without a recorded add-to-cart event due to direct purchase options, strong purchase intent before visiting the site, or how cart activity is tracked in the data.”
+This dataset is simulated and aggregated, so funnel steps should be viewed as engagement signals rather than fixed step-by-step actions. Some users complete purchases without a recorded add-to-cart event. This could happen due to direct ‘Buy Now’ flows, users who already knew what they wanted before visiting the site, or limitations in how add-to-cart actions are captured in the data.
 
 
 **EDA 6 - Segment-Level Experiment Performance**
 Segment-level analysis helps identify whether experiment performance is driven by user engagement, purchase intent, or customer value, enabling targeted optimization rather than relying on overall averages.
+
+Engagement Level Insights
+- High Engagement (~21% of users) are most active and likely to convert; Medium (~51%) are exploring and can be nudged toward conversion, Low (~28%) may need re-engagement campaigns.
+- Segmentation helps prioritize marketing and UX efforts, ensuring resources are focused where they have the most impact.
+
+Purchase Intent Segmentation
+- Most users (~93%) show low purchase intent, reflecting typical e-commerce behavior where browsing does not translate into cart actions.
+- A small but meaningful segment (~4%) demonstrates high purchase intent, defined by both cart interaction and above-median add-to-cart rates, indicating users closest to conversion.
+
+Final Conversion (Segment-Level Analysis)
+- Experiment B consistently outperforms Experiment A across all user segments, including large, high-impact groups.
+For example, in the biggest segment (Medium Engagement + Low Intent), conversion increases from 15.47% (A) → 20.61% (B) (+5.1 pp across 366–339 users), showing the uplift is real and not driven by a niche audience.
+
+- Purchase intent alone does not guarantee higher conversion — engagement is the multiplier.
+Users with Medium Engagement + High Intent convert more (21.85% in B) than users with Low Engagement + Low Intent (20.36% in B), proving that users must stay engaged for intent to translate into purchases.
+
+- The largest business impact comes from mid-funnel users, not extreme cases.
+High-intent, high-engagement users convert well but are very few (often under 15 users), while mid-funnel segments (Medium/Low Engagement + Low Intent) contain hundreds of users and show strong, stable uplift under Experiment B — making them the most scalable revenue drivers.
