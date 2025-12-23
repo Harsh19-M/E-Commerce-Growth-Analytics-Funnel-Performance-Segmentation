@@ -259,21 +259,55 @@ High-intent, high-engagement users convert well but are very few (often under 15
 
 <details> <summary><b> Final Conversion Table (Segemented) (Click to Expand)</b></summary>
 
-| Engagement_Level | Purchase_Intent_Level | Experiment Version | avg_Converion | Users |
-|-----------------|---------------------|-----------------|---------------|-------|
-| High            | High                | A               | 0.145823      | 8     |
-| High            | High                | B               | 0.207956      | 14    |
-| High            | Low                 | A               | 0.157507      | 140   |
-| High            | Low                 | B               | 0.200113      | 152   |
-| High            | Medium              | A               | 0.156034      | 6     |
-| High            | Medium              | B               | 0.180789      | 8     |
-| Low             | Low                 | A               | 0.153720      | 228   |
-| Low             | Low                 | B               | 0.203551      | 208   |
-| Medium          | High                | A               | 0.142523      | 16    |
-| Medium          | High                | B               | 0.218527      | 25    |
-| Medium          | Low                 | A               | 0.154694      | 366   |
-| Medium          | Low                 | B               | 0.206053      | 339   |
-| Medium          | Medium              | A               | 0.160910      | 25    |
-| Medium          | Medium              | B               | 0.182928      | 13    |
+| Engagement_Level | Purchase_Intent_Level | Experiment Version | element_tested      | avg_Converion | Users |
+|-----------------|---------------------|-----------------|------------------|---------------|-------|
+| High            | High                | A               | TrustBadge       | 0.135922      | 2     |
+| High            | High                | A               | UrgencyBanner    | 0.149123      | 6     |
+| High            | High                | B               | PriceCharm       | 0.212389      | 3     |
+| High            | High                | B               | TrustBadge       | 0.216495      | 3     |
+| High            | High                | B               | UrgencyBanner    | 0.203092      | 8     |
+| High            | Low                 | A               | FreeShippingBadge| 0.177145      | 32    |
+| High            | Low                 | A               | PriceCharm       | 0.166667      | 32    |
+| High            | Low                 | A               | TrustBadge       | 0.107586      | 32    |
+| High            | Low                 | A               | UrgencyBanner    | 0.172528      | 45    |
+| High            | Low                 | B               | FreeShippingBadge| 0.179699      | 36    |
+| High            | Low                 | B               | PriceCharm       | 0.186583      | 42    |
+| High            | Low                 | B               | TrustBadge       | 0.223545      | 40    |
+| High            | Low                 | B               | UrgencyBanner    | 0.210566      | 35    |
+| High            | Medium              | A               | PriceCharm       | 0.156966      | 3     |
+| High            | Medium              | A               | TrustBadge       | 0.075472      | 1     |
+| High            | Medium              | A               | UrgencyBanner    | 0.194915      | 2     |
+| High            | Medium              | B               | FreeShippingBadge| 0.181335      | 5     |
+| High            | Medium              | B               | PriceCharm       | 0.152174      | 2     |
+| High            | Medium              | B               | TrustBadge       | 0.235294      | 1     |
+| Low             | Low                 | A               | FreeShippingBadge| 0.177679      | 56    |
+| Low             | Low                 | A               | PriceCharm       | 0.166715      | 55    |
+| Low             | Low                 | A               | TrustBadge       | 0.102674      | 59    |
+| Low             | Low                 | A               | UrgencyBanner    | 0.170493      | 60    |
+| Low             | Low                 | B               | FreeShippingBadge| 0.193330      | 54    |
+| Low             | Low                 | B               | PriceCharm       | 0.182282      | 54    |
+| Low             | Low                 | B               | TrustBadge       | 0.227136      | 53    |
+| Low             | Low                 | B               | UrgencyBanner    | 0.212937      | 48    |
+| Medium          | High                | A               | TrustBadge       | 0.135922      | 8     |
+| Medium          | High                | A               | UrgencyBanner    | 0.149123      | 8     |
+| Medium          | High                | B               | PriceCharm       | 0.212389      | 6     |
+| Medium          | High                | B               | TrustBadge       | 0.216495      | 7     |
+| Medium          | High                | B               | UrgencyBanner    | 0.222781      | 12    |
+| Medium          | Low                 | A               | FreeShippingBadge| 0.176941      | 80    |
+| Medium          | Low                 | A               | PriceCharm       | 0.167242      | 91    |
+| Medium          | Low                 | A               | TrustBadge       | 0.104781      | 99    |
+| Medium          | Low                 | A               | UrgencyBanner    | 0.174767      | 99    |
+| Medium          | Low                 | B               | FreeShippingBadge| 0.198654      | 85    |
+| Medium          | Low                 | B               | PriceCharm       | 0.186209      | 92    |
+| Medium          | Low                 | B               | TrustBadge       | 0.225647      | 76    |
+| Medium          | Low                 | B               | UrgencyBanner    | 0.216781      | 90    |
+| Medium          | Medium              | A               | FreeShippingBadge| 0.175671      | 6     |
+| Medium          | Medium              | A               | PriceCharm       | 0.166373      | 9     |
+| Medium          | Medium              | A               | TrustBadge       | 0.075472      | 4     |
+| Medium          | Medium              | A               | UrgencyBanner    | 0.194915      | 6     |
+| Medium          | Medium              | B               | FreeShippingBadge| 0.185541      | 7     |
+| Medium          | Medium              | B               | PriceCharm       | 0.152174      | 4     |
+| Medium          | Medium              | B               | TrustBadge       | 0.235294      | 2     |
+
 
 </details> 
