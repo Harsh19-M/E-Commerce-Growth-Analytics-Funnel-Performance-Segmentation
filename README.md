@@ -260,8 +260,7 @@ Mid-funnel users + high-performing elements = largest business impact.
 - High-intent, high-engagement users convert well but are very few (<15 users).
 - Mid-funnel segments (Medium/Low Engagement + Low Intent) contain hundreds of users and show strong, stable uplift under Experiment B when optimal elements are used — making them the most scalable revenue drivers.
 
-<details> 
-<summary><b> Final Conversion Table with Best Performing Element (Click to Expand)</b></summary>
+<details> <summary><b> Final Conversion Table with Best Performing Element (Click to Expand)</b></summary>
 
 | Engagement_Level | Purchase_Intent_Level | Experiment_Version | Best_Element      | Best_avg_Conversion | Users_in_Segment |
 |-----------------|---------------------|-----------------|-----------------|------------------|----------------|
