@@ -78,7 +78,7 @@ This project aims to:
 - Version B frequently outperforms Version A at the bottom of the funnel (completed purchases), even when early-funnel engagement is neutral or negative.
 - Add-to-cart behavior serves as a useful mid-funnel diagnostic but does not always predict final conversion success.
 
-**EDA 4 - Lift Analysis (PRIMARY DECISION TOOL)**
+**EDA 4 - Lift Analysis**
 - Completed Purchase lift was used as the primary decision metric due to its direct revenue impact.
 - 5 out of 8 experiments show strong positive purchase lift under Version B, indicating consistent conversion improvement.
 - Some experiments show negative CTR or Add-to-Cart lift but positive purchase lift, reinforcing the importance of evaluating full-funnel outcomes.
@@ -257,6 +257,8 @@ Users with Medium Engagement + High Intent convert more (21.85% in B) than users
 - The largest business impact comes from mid-funnel users, not extreme cases.
 High-intent, high-engagement users convert well but are very few (often under 15 users), while mid-funnel segments (Medium/Low Engagement + Low Intent) contain hundreds of users and show strong, stable uplift under Experiment B — making them the most scalable revenue drivers.
 
+<details> <summary><b> Final Conversion Table (Segemented) (Click to Expand)</b></summary>
+
 | Engagement_Level | Purchase_Intent_Level | Experiment Version | avg_Converion | Users |
 |-----------------|---------------------|-----------------|---------------|-------|
 | High            | High                | A               | 0.145823      | 8     |
@@ -273,3 +275,5 @@ High-intent, high-engagement users convert well but are very few (often under 15
 | Medium          | Low                 | B               | 0.206053      | 339   |
 | Medium          | Medium              | A               | 0.160910      | 25    |
 | Medium          | Medium              | B               | 0.182928      | 13    |
+
+</details> 
