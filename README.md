@@ -52,7 +52,7 @@ This project aims to:
 
 ## Approach Overview
 ### **Project Planning & Funnel Analysis:**    
-Define Metrics, Map Funnel Stages (Visit → View → ATC → Purchase), Segment Users by Engagement & Purchase Intent.
+Define Metrics, Map Funnel Stages (Visit → View → AToC → Purchase), Segment Users by Engagement & Purchase Intent.
 
 ### **Aggregated Table Creation – PostgreSQL**
 
