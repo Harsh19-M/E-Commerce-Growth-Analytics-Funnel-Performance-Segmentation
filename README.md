@@ -52,14 +52,19 @@ This project aims to:
 
 ## Approach Overview
 ### **Project Planning & Funnel Analysis:**    
-Define Metrics, Map Funnel Stages (Visit → View → AToC → Purchase), Segment Users by Engagement & Purchase Intent.
+Define Metrics, Map Funnel Stages **(Visit → View → ATC → Purchase)**, Segment Users by Engagement & Purchase Intent.
 
 ### **Aggregated Table Creation – PostgreSQL**
+- Exploration & Validation: Ran 10 queries across sessions, users, orders, experiments to check joins, session counts, variant exposure, conversions, and experiment durations.
+- Decisions & Cleaning: Kept only sessions with valid experiment_id, handled nulls in orders, ensured unique users per variant, applied window functions for per-user session counts.
+- Final Aggregated Table: Joined cleaned CTEs to produce ecom.Agg_Etable with session, user, order, and experiment metrics — 1,563 analysis-ready rows for A/B testing and modeling.
 
 ### **Data Cleaning & Loading – PostgreSQL → Python → PostgreSQL**
-- Data Cleaning & Aggregation: PostgreSQL CTEs → Python transformations → final analysis-ready table.
+- Started with clean base tables via PostgreSQL CTEs; added new metrics (`Click-through_Behaviour`, `Add_to_cart Rate`, `Conversion_Rate(Cmpltd_Pur-Ratio)`) and user segments (`Engagement_Level`, `PagesView_Level`, `ClickProd-Level`, `Purchase_Intent_Level`) in Python, aggregated into **Analysis-LvL_table**.
+- Loading & Future Use Final table (`Analysis_Ready_Agg`) optionally loaded back to PostgreSQL for Power BI dashboards, downstream analyses, or further modeling.
+
 ### **Exploration (EDA) in Python**
-- EDA & Testing: Python pivot tables, lift %, segment-level analysis, feature-wise comparison.
+EDA & Testing: Python pivot tables, lift %, segment-level analysis, feature-wise comparison.
 
 **EDA 1 - Experiment Exposure & Balance (Validity Check)**
 - User and session exposure across Version A and B is well balanced (≈3% user difference, ≈2% session difference), indicating no allocation bias.
