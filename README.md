@@ -51,19 +51,15 @@ This project aims to:
 ---
 
 ## Approach Overview
-### **Project-Planning (Framework Used):** Funnel Analysis Principles - Funnel Diagram - Something Like that GOES HERE  
-*(Specific | Measurable | Achievable | Relevant | Time Bound)* &<br>(Business Understanding | Data Understanding | Data Preparation | Analysis / Modeling | Evaluation | Deployment)
+### **Project-Planning (Framework Used):** Project Planning & Funnel Analysis - Funnel Diagram - Something Like that GOES HERE  
+Define metrics, map funnel stages (Visit → View → ATC → Purchase), segment users by engagement & purchase intent.
 
-### **Initial Approach –**
-
-
-### **Aggregated Table Creation –**
-
+### **Aggregated Table Creation – PostgreSQL**
 
 ### **Data Cleaning & Loading – PostgreSQL → Python → PostgreSQL**
-- Connected to the
-- 
+- Data Cleaning & Aggregation: PostgreSQL CTEs → Python transformations → final analysis-ready table.
 ### **Exploration (EDA) in Python**
+- EDA & Testing: Python pivot tables, lift %, segment-level analysis, feature-wise comparison.
 
 **EDA 1 - Experiment Exposure & Balance (Validity Check)**
 - User and session exposure across Version A and B is well balanced (≈3% user difference, ≈2% session difference), indicating no allocation bias.
