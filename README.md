@@ -280,9 +280,7 @@ Mid-funnel users + high-performing elements = largest business impact.
 | Medium          | Medium              | A               | UrgencyBanner    | 0.194915         | 25             |
 | Medium          | Medium              | B               | TrustBadge       | 0.235294         | 13             |
 
-</details>
 
-  
 <details> <summary><b> Complete Final Conversion Table (with All elements tested) (Click to Expand)</b></summary>
 
 | Engagement_Level | Purchase_Intent_Level | Experiment Version | element_tested      | avg_Converion | Users |
@@ -337,3 +335,7 @@ Mid-funnel users + high-performing elements = largest business impact.
 
 
 </details> 
+
+</details>
+
+  
