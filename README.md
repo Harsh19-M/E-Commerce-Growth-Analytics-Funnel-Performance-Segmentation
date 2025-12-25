@@ -351,4 +351,30 @@ Mid-funnel users + high-performing elements = largest business impact.
 
 </details>
 
+---
+## Analytical Tests
+
+## **Test 1 — Overall Conversion Impact (A vs B)**
+
+### **Hypothesis**
+* **H₀ (Null):** Variant B does **not** improve conversion compared to Variant A.
+* **H₁ (Alternative):** Variant B has a **higher conversion rate** than Variant A.
+
+### **Statistical Test**
+* **Test Used:** One-sided proportion z-test
+* **Metric:** Conversion rate (completed purchase)
+
+### **Results**
+* **Z-statistic:** **2.497**
+* **p-value:** **0.0063**
+
+### **Interpretation**
+* The positive Z-statistic indicates that **Variant B converts better than Variant A**.
+* The p-value is well below 0.05, meaning the observed lift is **statistically significant** and unlikely due to random chance.
+
+### **Conclusion**
+> **Variant B delivers a statistically significant improvement in conversion rate over Variant A.**
+> This confirms that the website changes introduced in Variant B have a real, measurable positive impact on user purchasing behavior.
+
+---
   
