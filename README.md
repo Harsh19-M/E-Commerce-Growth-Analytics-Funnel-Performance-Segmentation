@@ -87,7 +87,7 @@ The EDA builds a **Complete Intelligence Foundation**, revealing — setting the
 - Add-to-cart behavior serves as a useful mid-funnel diagnostic but does not always predict final conversion success.
 
 **EDA 4 - Lift Analysis**
-Using Completed_Purchase as the primary decision metric, 5 of 8 experiments show strong positive lift under Version B, reinforcing the importance of full-funnel evaluation over isolated engagement metrics.
+- Using Completed_Purchase as the primary decision metric, 5 of 8 experiments show strong positive lift under Version B, reinforcing the importance of full-funnel evaluation over isolated engagement metrics.
 
 <details> <summary><b> Key EDAs Experiment-level metrics and analysis (Click to Expand)</b></summary>
 
@@ -232,7 +232,7 @@ While Version B shows a slightly higher average CTR overall, experiment-level li
 </details> 
 
 **EDA 5 - Funnel Drop-Off Analysis (Where do people quit?)** 
-The largest drop-off occurs between product view and add-to-cart, while Visit → Purchase rates vary widely by variant, showing that different experiments optimize different funnel stages rather than producing a single universal winner.
+- The largest drop-off occurs between product view and add-to-cart, while Visit → Purchase rates vary widely by variant, showing that different experiments optimize different funnel stages rather than producing a single universal winner.
 
 <details> <summary><b> Key EDAs Experiment-level metrics and analysis (Click to Expand)</b></summary>
 
@@ -253,7 +253,7 @@ This dataset is simulated and aggregated, so funnel steps should be viewed as en
 
 
 **EDA 6 - Segment-Level Experiment Performance**
-Experiment Version B outperforms Version A across every Engagement Level and Purchase Intent segment, but the magnitude of uplift depends on the UI element used: TrustBadge consistently drives the highest conversions for High-Engagement users (all intent levels), UrgencyBanner performs best for Medium Engagement + High Intent users, and the largest scalable gains come from mid-funnel users (Medium/Low Engagement + Low Intent) where Version B + TrustBadge delivers strong, stable conversion uplift across hundreds of users — showing that engagement + element choice amplify purchase intent, while high-intent users alone are not the primary growth lever.
+- Experiment Version B outperforms Version A across every Engagement Level and Purchase Intent segment, but the magnitude of uplift depends on the UI element used: TrustBadge consistently drives the highest conversions for High-Engagement users (all intent levels), UrgencyBanner performs best for Medium Engagement + High Intent users, and the largest scalable gains come from mid-funnel users (Medium/Low Engagement + Low Intent) where Version B + TrustBadge delivers strong, stable conversion uplift across hundreds of users — showing that engagement + element choice amplify purchase intent, while high-intent users alone are not the primary growth lever.
 Users are segmented into 3 funnel stages: Engagement (Interest), Purchase Intent, and Final Conversion. The addition of element_tested lets us see which UI/UX element drives conversions within each segment.
 
 <details> <summary><b> Key EDAs Experiment-level metrics and analysis (Click to Expand)</b></summary>
