@@ -66,11 +66,12 @@ Define Metrics, Map Funnel Stages **(Visit → View → ATC → Purchase)**, Seg
 - Final Aggregated Table: Joined cleaned CTEs to produce ecom.Agg_Etable with session, user, order, and experiment metrics — 1,563 analysis-ready rows for A/B testing and modeling.
 
 ### **Data Cleaning & Loading – PostgreSQL → Python → PostgreSQL**
-- Started with clean base tables via PostgreSQL CTEs; added new metrics (`Click-through_Behaviour`, `Add_to_cart Rate`, `Conversion_Rate(Cmpltd_Pur-Ratio)`) and user segments (`Engagement_Level`, `PagesView_Level`, `ClickProd-Level`, `Purchase_Intent_Level`) in Python, aggregated into **Analysis-LvL_table**.
-- Loading & Future Use Final table (`AggEtable_analysisLvL`) optionally loaded back to PostgreSQL for Power BI dashboards, downstream analyses, or further modeling.
+- Started with clean base tables via PostgreSQL CTEs; added new metrics (`Click-through_Behaviour`, `Add_to_cart Rate`, `Conversion_Rate(Cmpltd_Pur-Ratio)`) and user segments (`Engagement_Level`, `PagesView_Level`, `ClickProd-Level`, `Purchase_Intent_Level`) in Python, then aggregated into **Analysis-LvL_table**.
+- Loaded the post-EDA final table (AggEtable_analysisLvL) back into PostgreSQL for Power BI dashboards, downstream analyses, and future modeling.
+
 
 ### **Exploration (EDA) in Python**
-EDA & Testing: Python pivot tables, lift %, segment-level analysis, feature-wise comparison.
+The EDA builds a **Complete Intelligence Foundation**, revealing — setting the stage for deeper testing and the final BI dashboard & reporting.
 
 **EDA 1 - Experiment Exposure & Balance (Validity Check)**
 - User and session exposure across Version A and B is well balanced (≈3% user difference, ≈2% session difference), indicating no allocation bias.
@@ -86,15 +87,16 @@ EDA & Testing: Python pivot tables, lift %, segment-level analysis, feature-wise
 - Add-to-cart behavior serves as a useful mid-funnel diagnostic but does not always predict final conversion success.
 
 **EDA 4 - Lift Analysis**
+Using Completed_Purchase as the primary decision metric, 5 of 8 experiments show strong positive lift under Version B, reinforcing the importance of full-funnel evaluation over isolated engagement metrics.
+
+<details> <summary><b> Key EDAs Experiment-level metrics and analysis (Click to Expand)</b></summary>
+
 - Completed Purchase lift was used as the primary decision metric due to its direct revenue impact.
 - 5 out of 8 experiments show strong positive purchase lift under Version B, indicating consistent conversion improvement.
 - Some experiments show negative CTR or Add-to-Cart lift but positive purchase lift, reinforcing the importance of evaluating full-funnel outcomes.
 
 **NOTE:** Detailed experiment-level metrics, rates, and lift analysis are shown below.
 
-The EDA builds a **Complete Intelligence Foundation**, revealing — setting the stage for deeper testing and the final BI dashboard & reporting.
-
-<details> <summary><b> Key EDAs Experiment-level metrics, rates, and lift analysis (Click to Expand)</b></summary>
  
 ### **Experiment-level Funnel Lift Analysis (A/B Testing):**
 - Completed Purchase is the primary decision metric, as it directly reflects revenue impact.
@@ -230,6 +232,10 @@ While Version B shows a slightly higher average CTR overall, experiment-level li
 </details> 
 
 **EDA 5 - Funnel Drop-Off Analysis (Where do people quit?)** 
+The largest drop-off occurs between product view and add-to-cart, while Visit → Purchase rates vary widely by variant, showing that different experiments optimize different funnel stages rather than producing a single universal winner.
+
+<details> <summary><b> Key EDAs Experiment-level metrics and analysis (Click to Expand)</b></summary>
+
 - Landing experience effectiveness differs clearly across experiment variants.
 Visit → Product View rates range from roughly 25% to 42%, showing that some variants are significantly better at converting site visits into product interest.
 - The biggest funnel drop-off occurs between product view and add-to-cart.
@@ -243,9 +249,14 @@ Some variants excel at generating early interest (higher Visit → View), while 
 
 This dataset is simulated and aggregated, so funnel steps should be viewed as engagement signals rather than fixed step-by-step actions. Some users complete purchases without a recorded add-to-cart event. This could happen due to direct ‘Buy Now’ flows, users who already knew what they wanted before visiting the site, or limitations in how add-to-cart actions are captured in the data.
 
+</details> 
+
 
 **EDA 6 - Segment-Level Experiment Performance**
+Experiment Version B outperforms Version A across every Engagement Level and Purchase Intent segment, but the magnitude of uplift depends on the UI element used: TrustBadge consistently drives the highest conversions for High-Engagement users (all intent levels), UrgencyBanner performs best for Medium Engagement + High Intent users, and the largest scalable gains come from mid-funnel users (Medium/Low Engagement + Low Intent) where Version B + TrustBadge delivers strong, stable conversion uplift across hundreds of users — showing that engagement + element choice amplify purchase intent, while high-intent users alone are not the primary growth lever.
 Users are segmented into 3 funnel stages: Engagement (Interest), Purchase Intent, and Final Conversion. The addition of element_tested lets us see which UI/UX element drives conversions within each segment.
+
+<details> <summary><b> Key EDAs Experiment-level metrics and analysis (Click to Expand)</b></summary>
 
 **Engagement Level Segmentation**
 - High Engagement (~21% of users) are most active and likely to convert; Medium (~51%) are exploring and can be nudged toward conversion, Low (~28%) may need re-engagement campaigns.
@@ -267,7 +278,6 @@ Mid-funnel users + high-performing elements = largest business impact.
 - High-intent, high-engagement users convert well but are very few (<15 users).
 - Mid-funnel segments (Medium/Low Engagement + Low Intent) contain hundreds of users and show strong, stable uplift under Experiment B when optimal elements are used — making them the most scalable revenue drivers.
 
-<details> <summary><b> Final Conversion Table with Best Performing Element (Click to Expand)</b></summary>
 
 | Engagement_Level | Purchase_Intent_Level | Experiment_Version | Best_Element      | Best_avg_Conversion | Users_in_Segment |
 |-----------------|---------------------|-----------------|-----------------|------------------|----------------|
