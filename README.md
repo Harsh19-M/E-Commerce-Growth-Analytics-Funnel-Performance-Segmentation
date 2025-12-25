@@ -334,7 +334,7 @@ Mid-funnel users + high-performing elements = largest business impact.
 | Medium          | Low                 | A               | PriceCharm       | 0.167242      | 91    |
 | Medium          | Low                 | A               | TrustBadge       | 0.104781      | 99    |
 | Medium          | Low                 | A               | UrgencyBanner    | 0.174767      | 99    |
-| Medium          | Low                 | B               | FreeShippingBadge| 0.198654      | 85    |
+| Medium          | Low                 | B               | FreeShippingBadge| 0.198654      | 85    | 
 | Medium          | Low                 | B               | PriceCharm       | 0.186209      | 92    |
 | Medium          | Low                 | B               | TrustBadge       | 0.225647      | 76    |
 | Medium          | Low                 | B               | UrgencyBanner    | 0.216781      | 90    |
