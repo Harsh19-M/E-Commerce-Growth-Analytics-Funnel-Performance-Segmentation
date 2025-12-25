@@ -373,9 +373,8 @@ Mid-funnel users + high-performing elements = largest business impact.
 * The p-value is well below 0.05, meaning the observed lift is **statistically significant** and unlikely due to random chance.
 
 **Conclusion**
-
-**Variant B delivers a statistically significant improvement in conversion rate over Variant A.**
-This confirms that the website changes introduced in Variant B have a real, measurable positive impact on user purchasing behavior.
+- **Variant B delivers a statistically significant improvement in conversion rate over Variant A.**
+- This confirms that the website changes introduced in Variant B have a real, measurable positive impact on user purchasing behavior.
 
 ---
   
