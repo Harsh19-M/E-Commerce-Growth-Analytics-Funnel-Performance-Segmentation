@@ -370,12 +370,91 @@ Mid-funnel users + high-performing elements = largest business impact.
 
 **Interpretation**
 * The positive Z-statistic indicates that **Variant B converts better than Variant A**.
-* The p-value is well below 0.05, (0.0063) meaning there is 0.63% chance this lift is random.
-* So, the observed lift is **statistically significant** and unlikely due to random chance.
+* The p-value of 0.63% means there is only a 0.63% chance that this observed lift is due to random variation.
+* Therefore, the improvement in conversion rate is **statistically significant** and unlikely due to random chance.
 
 **Conclusion**
 - **Variant B delivers a statistically significant improvement in conversion rate over Variant A.**
 - This confirms that the website changes introduced in Variant B have a real, measurable positive impact on user purchasing behavior.
+
+
+
+Aight bro, I got you — here’s a **clean, professional, recruiter-ready version of Test 2**, combining all three analyses (two-sided, larger, smaller) with clear findings and interpretation for each. I’ll follow the **same format as your Test 1 README**, just adapted for per-experiment lift analysis.
+
+---
+
+## **Test 2 — Experiment-Level Conversion Impact (A vs B)**
+
+**Purpose:** Check which specific experiments in Version B actually outperform Version A, and quantify lift. This helps the business **only roll out successful experiments** and avoid wasting resources on experiments that underperform.
+
+
+### **Statistical Approach**
+
+We applied a **Two-Proportion Z-Test** for each experiment under three scenarios:
+
+1. **Two-sided** — checks **any difference** between A and B (positive or negative).
+2. **One-sided “larger”** — tests if **B is better than A**.
+3. **One-sided “smaller”** — tests if **B is worse than A**.
+
+**Metric:** Conversion rate per experiment (`completed purchase / users exposed`).
+
+
+### **Results Tables**
+
+**1️ Two-Sided Test (any difference)**
+
+| Experiment | Conv Rate A | Conv Rate B | Lift B vs A | Z-Score | P-Value |
+| ---------- | ----------- | ----------- | ----------- | ------- | ------- |
+| 1          | 0.2000      | 0.1818      | -0.0182     | 0.3259  | 0.7445  |
+| 2          | 0.1446      | 0.2143      | 0.0697      | -1.2405 | 0.2148  |
+| 3          | 0.0769      | 0.2353      | 0.1584      | -3.0489 | 0.0023  |
+| 4          | 0.1518      | 0.2476      | 0.0958      | -1.7699 | 0.0767  |
+| 5          | 0.1829      | 0.1224      | -0.0605     | 1.1317  | 0.2578  |
+| 6          | 0.1852      | 0.1538      | -0.0313     | 0.5851  | 0.5585  |
+| 7          | 0.1739      | 0.2697      | 0.0958      | -1.5521 | 0.1206  |
+| 8          | 0.1373      | 0.2165      | 0.0792      | -1.4676 | 0.1422  |
+
+**2️ One-Sided “Larger” Test (B > A)**
+
+| Experiment | Conv Rate A | Conv Rate B | Lift B vs A | Z-Score | P-Value |
+| ---------- | ----------- | ----------- | ----------- | ------- | ------- |
+| 1          | 0.2000      | 0.1818      | -0.0182     | 0.3259  | 0.3723  |
+| 2          | 0.1446      | 0.2143      | 0.0697      | -1.2405 | 0.8926  |
+| 3          | 0.0769      | 0.2353      | 0.1584      | -3.0489 | 0.9989  |
+| 4          | 0.1518      | 0.2476      | 0.0958      | -1.7699 | 0.9616  |
+| 5          | 0.1829      | 0.1224      | -0.0605     | 1.1317  | 0.1289  |
+| 6          | 0.1852      | 0.1538      | -0.0313     | 0.5851  | 0.2792  |
+| 7          | 0.1739      | 0.2697      | 0.0958      | -1.5521 | 0.9397  |
+| 8          | 0.1373      | 0.2165      | 0.0792      | -1.4676 | 0.9289  |
+
+**3️ One-Sided “Smaller” Test (B < A)**
+
+| Experiment | Conv Rate A | Conv Rate B | Lift B vs A | Z-Score | P-Value |
+| ---------- | ----------- | ----------- | ----------- | ------- | ------- |
+| 1          | 0.2000      | 0.1818      | -0.0182     | 0.3259  | 0.6277  |
+| 2          | 0.1446      | 0.2143      | 0.0697      | -1.2405 | 0.1074  |
+| 3          | 0.0769      | 0.2353      | 0.1584      | -3.0489 | 0.0011  |
+| 4          | 0.1518      | 0.2476      | 0.0958      | -1.7699 | 0.0384  |
+| 5          | 0.1829      | 0.1224      | -0.0605     | 1.1317  | 0.8711  |
+| 6          | 0.1852      | 0.1538      | -0.0313     | 0.5851  | 0.7208  |
+| 7          | 0.1739      | 0.2697      | 0.0958      | -1.5521 | 0.0603  |
+| 8          | 0.1373      | 0.2165      | 0.0792      | -1.4676 | 0.0711  |
+
+
+### **Interpretation & Findings**
+
+* **Two-Sided Test:** Confirms which experiments show **any significant difference**. Experiment 3 (p=0.0023) shows **significant positive lift**, while others are mostly inconclusive.
+* **One-Sided “Larger”:** Tests if **B outperforms A**. Experiment 3 (p≈0.999) and Experiment 4 (p≈0.962) strongly support that **B is better**. Experiments 1, 5, 6 show no evidence of improvement.
+* **One-Sided “Smaller”:** Tests if **B underperforms A**. Experiments 1, 5, 6 have higher p-values, suggesting **no strong evidence that B is worse**, while Experiment 3 is highly unlikely to be worse.
+
+**Business Takeaways:**
+
+1. **Experiment 3** is a clear winner — Version B delivers a significant conversion lift.
+2. **Experiment 4** shows promising positive lift; could be considered for rollout with caution.
+3. **Experiments 1, 5, 6** show either negative lift or no significant change — should not be prioritized.
+4. **Experiments 2, 7, 8** are inconclusive — might need larger sample sizes or further testing.
+
+
 
 ---
   
