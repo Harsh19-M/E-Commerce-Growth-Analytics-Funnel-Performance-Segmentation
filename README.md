@@ -402,7 +402,7 @@ We applied a **Two-Proportion Z-Test** for each experiment under three scenarios
 
 ### **Results Tables**
 
-**1️ Two-Sided Test (any difference)**
+**1️. Two-Sided Test (any difference)**
 
 | Experiment | Conv Rate A | Conv Rate B | Lift B vs A | Z-Score | P-Value |
 | ---------- | ----------- | ----------- | ----------- | ------- | ------- |
@@ -415,7 +415,7 @@ We applied a **Two-Proportion Z-Test** for each experiment under three scenarios
 | 7          | 0.1739      | 0.2697      | 0.0958      | -1.5521 | 0.1206  |
 | 8          | 0.1373      | 0.2165      | 0.0792      | -1.4676 | 0.1422  |
 
-**2️ One-Sided “Larger” Test (B > A)**
+**2️. One-Sided “Larger” Test (B > A)**
 
 | Experiment | Conv Rate A | Conv Rate B | Lift B vs A | Z-Score | P-Value |
 | ---------- | ----------- | ----------- | ----------- | ------- | ------- |
@@ -428,7 +428,7 @@ We applied a **Two-Proportion Z-Test** for each experiment under three scenarios
 | 7          | 0.1739      | 0.2697      | 0.0958      | -1.5521 | 0.9397  |
 | 8          | 0.1373      | 0.2165      | 0.0792      | -1.4676 | 0.9289  |
 
-**3️ One-Sided “Smaller” Test (B < A)**
+**3️. One-Sided “Smaller” Test (B < A)**
 
 | Experiment | Conv Rate A | Conv Rate B | Lift B vs A | Z-Score | P-Value |
 | ---------- | ----------- | ----------- | ----------- | ------- | ------- |
