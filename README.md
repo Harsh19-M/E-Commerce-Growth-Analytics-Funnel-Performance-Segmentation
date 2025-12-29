@@ -442,7 +442,7 @@ We applied a **Two-Proportion Z-Test** for each experiment under three scenarios
 | 8          | 0.1373      | 0.2165      | 0.0792      | -1.4676 | 0.0711  |
 
 
-**Test 2 — OVerall Experiment-Level Conversion Impact (A vs B)**
+**Test 2 — Overall Experiment-Level Conversion Impact (A vs B)**
 
 Legend: <br>
 🟢 = Clear winner → rollout <br>
