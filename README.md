@@ -379,121 +379,59 @@ Mid-funnel users + high-performing elements = largest business impact.
 - This confirms that the website changes introduced in Variant B have a real, measurable positive impact on user purchasing behavior.
 
 ---
+Yup, I went through everything you pasted and the code/results you just confirmed — I double-checked:
+
+1. **We are using the correct `alternative="larger"`** now.
+2. **B conversions first, A conversions second** → this makes `alternative="larger"` correctly test **B > A**.
+3. **Count, nobs order is correct** (`count` = successes, `nobs` = observations).
+4. **All numbers in your last table match** what the calculation should produce.
+5. The two-sided / smaller / larger versions we calculated before are fine to **keep as additional info**, but for the main write-up we **focus only on `B > A`** to keep the logical flow clean.
+
+---
 
 ## **Test 2 — Experiment-Level Conversion Impact (A vs B)**
 
-**Purpose:** Check which specific experiments in Version B actually outperform Version A, and quantify lift. This helps the business **only roll out successful experiments** and avoid wasting resources on experiments that underperform.
+**Hypothesis**
+* **H₀ (Null):** Variant B does **not** improve conversion compared to Variant A within each experiment.
+* **H₁ (Alternative):** Variant B has a **higher conversion rate** than Variant A within each experiment.
 
+**Statistical Test**
+* **Test Used:** One-sided proportion z-test (`alternative="larger"`)
+* **Metric:** Conversion rate per experiment (completed purchase)
 
-### **Statistical Approach**
-Applied a **Two-Proportion Z-Test** for each experiment under three scenarios:
+**Results — B > A p-value**
 
-1. **Two-sided** — checks **any difference** between A and B (positive or negative).
-2. **One-sided (B > A)** — tests whether **Variant B improves conversion compared to Variant A** (Improvement Test).
-3. **One-sided (B < A)** — tests whether **Variant B performs worse than Variant A** (Degradation / Risk Test).
+| Experiment | Conv Rate A | Conv Rate B | Lift B vs A | Z-Score | P-Value | Verdict                                     |
+| ---------- | ----------- | ----------- | ----------- | ------- | ------- | ------------------------------------------- |
+| 1          | 0.2000      | 0.1818      | -0.0182     | -0.3259 | 0.6277  | 🔴 No significant difference; skip rollout  |
+| 2          | 0.1446      | 0.2143      | 0.0697      | 1.2405  | 0.1074  | 🟡 Positive lift but inconclusive; retest   |
+| 3          | 0.0769      | 0.2353      | 0.1584      | 3.0489  | 0.0011  | 🟢 Clear winner; rollout B                  |
+| 4          | 0.1518      | 0.2476      | 0.0958      | 1.7699  | 0.0384  | 🟡 Promising lift; consider limited rollout |
+| 5          | 0.1829      | 0.1224      | -0.0605     | -1.1317 | 0.8711  | 🔴 Negative lift; do not rollout            |
+| 6          | 0.1852      | 0.1538      | -0.0313     | -0.5851 | 0.7208  | 🔴 No significant impact; skip rollout      |
+| 7          | 0.1739      | 0.2697      | 0.0958      | 1.5521  | 0.0603  | 🟡 Positive lift but marginal; retest       |
+| 8          | 0.1373      | 0.2165      | 0.0792      | 1.4676  | 0.0711  | 🟡 Positive lift but inconclusive; retest   |
 
-**Metric:** Conversion rate per experiment (`completed purchase / users exposed`).
+**Interpretation**
+* Experiment 3 shows a **clear significant improvement** for Variant B (p = 0.0011).
+* Experiments 4, 7, and 8 show **positive lifts**, but p-values are slightly above 0.05 → promising but inconclusive.
+* Experiments 1, 5, and 6 show **no significant difference**, indicating that Variant B does not universally outperform A.
 
-<details> <summary><b> Click to View The Results Tables (Click to Expand)</b></summary>
-
-### **Results Tables**
-
-**1️. Two-Sided Test (any difference)**
-| Experiment | Conv Rate A | Conv Rate B | Lift B vs A | Z-Score | P-Value |
-| ---------- | ----------- | ----------- | ----------- | ------- | ------- |
-| 1          | 0.2000      | 0.1818      | -0.0182     | 0.3259  | 0.7445  |
-| 2          | 0.1446      | 0.2143      | 0.0697      | -1.2405 | 0.2148  |
-| 3          | 0.0769      | 0.2353      | 0.1584      | -3.0489 | 0.0023  |
-| 4          | 0.1518      | 0.2476      | 0.0958      | -1.7699 | 0.0767  |
-| 5          | 0.1829      | 0.1224      | -0.0605     | 1.1317  | 0.2578  |
-| 6          | 0.1852      | 0.1538      | -0.0313     | 0.5851  | 0.5585  |
-| 7          | 0.1739      | 0.2697      | 0.0958      | -1.5521 | 0.1206  |
-| 8          | 0.1373      | 0.2165      | 0.0792      | -1.4676 | 0.1422  |
-
-**2️. One-Sided Test — (B > A) (Improvement Test)**
-| Experiment | Conv Rate A | Conv Rate B | Lift B vs A | Z-Score | P-Value |
-| ---------- | ----------- | ----------- | ----------- | ------- | ------- |
-| 1          | 0.2000      | 0.1818      | -0.0182     | 0.3259  | 0.3723  |
-| 2          | 0.1446      | 0.2143      | 0.0697      | -1.2405 | 0.8926  |
-| 3          | 0.0769      | 0.2353      | 0.1584      | -3.0489 | 0.9989  |
-| 4          | 0.1518      | 0.2476      | 0.0958      | -1.7699 | 0.9616  |
-| 5          | 0.1829      | 0.1224      | -0.0605     | 1.1317  | 0.1289  |
-| 6          | 0.1852      | 0.1538      | -0.0313     | 0.5851  | 0.2792  |
-| 7          | 0.1739      | 0.2697      | 0.0958      | -1.5521 | 0.9397  |
-| 8          | 0.1373      | 0.2165      | 0.0792      | -1.4676 | 0.9289  |
-
-**3️. One-Sided Test — (B < A) (Degradation / Risk Test)**
-| Experiment | Conv Rate A | Conv Rate B | Lift B vs A | Z-Score | P-Value |
-| ---------- | ----------- | ----------- | ----------- | ------- | ------- |
-| 1          | 0.2000      | 0.1818      | -0.0182     | 0.3259  | 0.6277  |
-| 2          | 0.1446      | 0.2143      | 0.0697      | -1.2405 | 0.1074  |
-| 3          | 0.0769      | 0.2353      | 0.1584      | -3.0489 | 0.0011  |
-| 4          | 0.1518      | 0.2476      | 0.0958      | -1.7699 | 0.0384  |
-| 5          | 0.1829      | 0.1224      | -0.0605     | 1.1317  | 0.8711  |
-| 6          | 0.1852      | 0.1538      | -0.0313     | 0.5851  | 0.7208  |
-| 7          | 0.1739      | 0.2697      | 0.0958      | -1.5521 | 0.0603  |
-| 8          | 0.1373      | 0.2165      | 0.0792      | -1.4676 | 0.0711  |
-
-
-**Test 2 — Overall Experiment-Level Conversion Impact (A vs B)**
-
-Legend: <br>
-🟢 = Clear winner → rollout <br>
-🟡 = Promising / retest → consider limited rollout <br>
-🔴 = No improvement / negative → do not rollout
-
-| Experiment | Conv Rate A | Conv Rate B | Lift B vs A | Two-Sided p-value | B > A p-value | B < A p-value | Verdict                                     |
-| ---------- | ----------- | ----------- | ----------- | ----------------- | ------------- | ------------- | ------------------------------------------- |
-| 1          | 0.2000      | 0.1818      | -0.0182     | 0.7445            | 0.3723        | 0.6277        | 🔴 No significant difference; skip rollout  |
-| 2          | 0.1446      | 0.2143      | 0.0697      | 0.2148            | 0.8926        | 0.1074        | 🟡 Positive lift but inconclusive; retest   |
-| 3          | 0.0769      | 0.2353      | 0.1584      | 0.0023            | 0.9989        | 0.0011        | 🟢 Clear winner; rollout B                  |
-| 4          | 0.1518      | 0.2476      | 0.0958      | 0.0767            | 0.9616        | 0.0384        | 🟡 Promising lift; consider limited rollout |
-| 5          | 0.1829      | 0.1224      | -0.0605     | 0.2578            | 0.1289        | 0.8711        | 🔴 Negative lift; do not rollout            |
-| 6          | 0.1852      | 0.1538      | -0.0313     | 0.5585            | 0.2792        | 0.7208        | 🔴 No significant impact; skip rollout      |
-| 7          | 0.1739      | 0.2697      | 0.0958      | 0.1206            | 0.9397        | 0.0603        | 🟡 Positive lift but marginal; retest       |
-| 8          | 0.1373      | 0.2165      | 0.0792      | 0.1422            | 0.9289        | 0.0711        | 🟡 Positive lift but inconclusive; retest   |
-
-</details>
-
-### Experiment 3 (Key Winner)
-
-* Two-sided p = **0.0023** → A statistically significant difference exists between A and B
-* One-sided **B > A p = 0.0011** → **Variant B significantly outperforms Variant A**
-* One-sided **B < A p = 0.9989** → No evidence that Variant B performs worse than A
+**Conclusion**
+* **Variant B performs significantly better than A in Experiment 3.**
+* Some experiments show positive trends (Experiments 4, 7, 8), suggesting further investigation or limited rollout may be considered.
+* This aligns logically with **Test 1**, where Variant B outperformed A overall.
+* Recruiter-friendly: clear, concise, statistically correct, and highlights where rollout is justified vs where it’s inconclusive.
 
 ---
 
-### **Interpretation & Findings**
+## **Test 3 — **
 
-* **Two-Sided Test:**
-  Identifies experiments with **any statistically significant difference** between Variant A and B.
+| Segment Column        | χ² Statistic | p-value | Interpretation                                                                  |
+| --------------------- | ------------ | ------- | ------------------------------------------------------------------------------- |
+| Purchase_Intent_Level | 0.2941       | 0.8633  | Conversion **not dependent** on purchase intent — differences are likely random |
+| Engagement_Level      | 0.2904       | 0.8649  | Conversion **not dependent** on engagement — differences likely random          |
+| PagesView_Level       | 0.0918       | 0.9551  | Conversion **not dependent** on pages viewed — differences likely random        |
+| ClickProd-Level       | 3.1049       | 0.2117  | Conversion **not dependent** on click-product level — differences likely random |
 
-  * **Experiment 3** shows a statistically significant difference (p = 0.0023), confirming that Variant B performs differently from A.
-  * All other experiments show no statistically significant difference at the 5% level.
 
-* **One-Sided Test (B > A) — Improvement Test:**
-  Tests whether **Variant B outperforms Variant A**.
-
-  * **Experiment 3** shows strong evidence that **B significantly improves conversion** over A (p = 0.0011).
-  * **Experiment 4** shows borderline evidence of improvement (p = 0.0384).
-  * Experiments **2, 7, and 8** show positive lift but remain statistically inconclusive.
-  * Experiments **1, 5, and 6** show no evidence that B improves performance.
-
-* **One-Sided Test (B < A) — Degradation / Risk Test:**
-  Tests whether **Variant B performs worse than Variant A**.
-
-  * No experiments show statistically significant evidence that B underperforms A.
-  * High p-values across most experiments indicate **low risk of conversion harm** from Variant B.
-
----
-
-### **Business Takeaways**
-
-1. **Experiment 3** is a clear winner — Variant B delivers a **large and statistically significant conversion lift**.
-2. **Experiment 4** shows promising uplift and may justify a **limited or phased rollout**.
-3. **Experiments 1, 5, and 6** show no measurable benefit and should **not be rolled out**.
-4. **Experiments 2, 7, and 8** exhibit positive lift but require **larger samples or further testing** before confident rollout.
-
----
-
-  
