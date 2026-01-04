@@ -483,3 +483,6 @@ While chi-square tests evaluate **pairwise dependency**, logistic regression is 
 
 ---
 
+NOTE: Advanced statistical methods (z-tests, chi-square tests, logistic regression, and interaction modeling) were selectively applied based on the analytical question being addressed, rather than used indiscriminately.
+
+
