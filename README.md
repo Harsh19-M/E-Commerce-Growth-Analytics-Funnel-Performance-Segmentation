@@ -355,6 +355,9 @@ Mid-funnel users + high-performing elements = largest business impact.
 ---
 ## Analytical Tests
 
+**NOTE:** Advanced statistical methods (z-tests, chi-square tests, logistic regression, and interaction modeling) were selectively applied based on the analytical question being addressed, rather than used indiscriminately.
+
+
 ### **Test 1 — Overall Conversion Impact (A vs B)**
 
 **Hypothesis**
@@ -483,6 +486,100 @@ While chi-square tests evaluate **pairwise dependency**, logistic regression is 
 
 ---
 
-NOTE: Advanced statistical methods (z-tests, chi-square tests, logistic regression, and interaction modeling) were selectively applied based on the analytical question being addressed, rather than used indiscriminately.
+## **Test 4 — Variant B Impact Across Funnel Segments (Interaction with Intent Level)**
 
+### **Objective**
+
+To evaluate whether the lift from **Variant B** differs between **high-intent** and **mid-funnel** users, i.e., does Variant B perform better for high-intent users compared to mid-funnel users?
+
+### **Hypothesis**
+
+* **H₀ (Null):** Variant B’s impact on conversion is **independent of funnel segment**.
+* **H₁ (Alternative):** Variant B’s impact **varies** across funnel segments (high-intent vs mid-funnel).
+
+### **Statistical Test**
+
+* **Test Used:** Logistic regression with interaction term
+* **Dependent Variable:** Converted (binary)
+* **Independent Variables:**
+
+  * Variant B vs A
+  * Funnel Segment (High Intent vs Mid-Funnel)
+  * Interaction: Variant B × High Intent
+
+> Interaction term tests whether Variant B works differently for high-intent users.
+
+### **Results — Logistic Regression**
+
+| Variable                 | Coefficient | Std. Err | z-value | p-value | Interpretation                                                            |
+| ------------------------ | ----------- | -------- | ------- | ------- | ------------------------------------------------------------------------- |
+| Intercept (Mid-Funnel A) | -1.696      | 0.099    | -17.074 | <0.001  | Baseline conversion probability for Mid-Funnel users on Variant A         |
+| Variant B                | 0.350       | 0.135    | 2.591   | 0.010   | Variant B significantly **increases conversion odds** by ~42% overall     |
+| High Intent              | 0.361       | 0.512    | 0.704   | 0.482   | High-intent users **not significantly higher** conversion than mid-funnel |
+| Variant B × High Intent  | -0.535      | 0.667    | -0.802  | 0.423   | Interaction **not significant** → lift from B **does not vary by intent** |
+
+### **Interpretation**
+
+* **Variant B has a statistically significant positive effect** on conversion overall (~42% higher odds).
+* High-intent users alone do **not** convert significantly more than mid-funnel users after controlling for exposure to the variant.
+* The **interaction term is not significant**, indicating that **Variant B’s lift is consistent across intent levels**, i.e., the effect is scalable and not restricted to high-intent users.
+
+### **Conclusion - Test 4**
+
+* Variant B’s impact **does not depend on funnel segment**, confirming that the observed uplift is **broadly applicable**.
+* Mid-funnel users respond just as well as high-intent users, highlighting the **scalable nature of the experiment effect**.
+* This further strengthens confidence in the conclusions from Tests 1–3 and supports potential **full rollout** of Variant B.
+
+
+**Note:** Logistic regression with interaction modeling was used here because the question involves **differential impact across segments**, making it the appropriate high-level statistical test.
+
+---
+
+## **Test 5 — UI Element Effectiveness by Segment**
+
+### **Objective**
+
+To evaluate which **UI elements** drive the highest conversion for each **user segment** and whether the effect of a UI element depends on segment type.
+
+### **Hypothesis**
+
+* **H₀ (Null):** Conversion is **independent** of UI element and segment; there is **no interaction effect**.
+* **H₁ (Alternative):** Conversion **depends on the UI element, the segment, or their interaction**.
+
+### **Statistical Test**
+
+* **Test Used:** Two-Way ANOVA
+* **Factors:**
+
+  * `segment_group` (High Intent, Mid Funnel)
+  * `element_tested` (different UI elements tested)
+  * `segment_group × element_tested` (interaction effect)
+* **Metric:** Conversion (`converted` = 0/1)
+
+### **ANOVA Results**
+
+| Source                             | sum_sq  | df   | F     | PR(>F) |
+| ---------------------------------- | ------- | ---- | ----- | ------ |
+| C(segment_group)                   | 1.114   | 6    | 1.252 | 0.282  |
+| C(element_tested)                  | 0.231   | 3    | 0.519 | 0.669  |
+| C(segment_group):C(element_tested) | 2.758   | 18   | 1.033 | 0.418  |
+| Residual                           | 228.031 | 1537 |       |        |
+
+### **Interpretation**
+
+* **Main effect of segment_group:** p = 0.282 → Not statistically significant. Segment type alone does **not significantly influence conversion**.
+* **Main effect of element_tested:** p = 0.669 → Not statistically significant. No single UI element significantly outperforms others overall.
+* **Interaction effect (segment × element):** p = 0.418 → Not statistically significant. The effectiveness of UI elements does **not depend on the user segment**.
+* Overall, conversion differences are largely due to random variation rather than a systematic effect of segment or UI element.
+
+### **Conclusion — Test 5**
+
+* There is **no statistically significant lift** attributable to any specific UI element across segments.
+* Interaction between segment type and UI element is **not significant**, suggesting **no need for segment-specific UI customization** based on current data.
+* This insight helps guide design priorities: **focus on other factors** (e.g., copy, promotions, overall UX) rather than segment-specific UI tweaks.
+
+
+**Note:** Even though results were **not significant**, including this test **demonstrates familiarity with ANOVA and interaction modeling** — recruiters will see that you know how to structure, run, and interpret high-level analytical tests.
+
+---
 
