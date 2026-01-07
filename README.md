@@ -74,6 +74,20 @@ Define Metrics, Map Funnel Stages **(Visit → View → ATC → Purchase)**, Seg
 ### **Exploration (EDA) in Python**
 The EDA builds a **Complete Intelligence Foundation**, revealing — setting the stage for deeper testing and the final BI dashboard & reporting.
 
+* **EDA 1 — Experiment Exposure & Balance:** Verified user and session exposure across Versions A and B is well balanced (~3% user difference, ~2% session difference) with no abnormal distributions, confirming valid comparisons for downstream analysis.
+
+* **EDA 2 — Funnel Metrics by Experiment:** Observed meaningful behavioral differences between Versions A and B; several experiments show higher completed purchase rates in Version B despite similar or lower CTRs, suggesting improved traffic quality rather than volume.
+
+* **EDA 3 — Funnel Rate Analysis (CTR → ATC → Purchase):** Found that high click-through rates do not reliably predict purchases; Version B frequently outperforms A at the bottom of the funnel even when early-funnel engagement is neutral or negative, and Add-to-Cart is a helpful but imperfect mid-funnel diagnostic.
+
+* **EDA 4 — Lift Analysis:** Completed Purchase lift highlights Version B’s superiority: 5 out of 8 experiments show strong positive purchase lift (up to +211%), while some experiments show negative early-funnel lift but positive final conversion, emphasizing the need for full-funnel evaluation.
+
+* **EDA 5 — Funnel Drop-Off Analysis:** Identified stage-specific drop-offs: largest between Product View → Add-to-Cart (10–30%), non-linear funnel behavior, and variant-dependent performance; some variants excel early (Visit → View), others at final conversion (Visit → Purchase), highlighting stage-specific optimization opportunities.
+
+* **EDA 6 — Segment-Level Experiment Performance:** Found that Version B outperforms A across all Engagement and Purchase Intent segments, with TrustBadge and UrgencyBanner driving the largest scalable lifts in mid-funnel users; high-intent users convert well but are few, showing engagement and element choice amplify purchase intent more than intent alone.
+
+<details> <summary><b> Key EDA 1 to 6: Steps and Findigs in Detail (Click to Expand)</b></summary>
+
 **EDA 1 - Experiment Exposure & Balance (Validity Check)**
 - User and session exposure across Version A and B is well balanced (≈3% user difference, ≈2% session difference), indicating no allocation bias.
 - All experiments have sufficient exposure with no missing or abnormal session distributions, supporting valid downstream comparison.
@@ -353,6 +367,7 @@ Mid-funnel users + high-performing elements = largest business impact.
 
 </details>
 
+<details>
 ---
 ## Analytical Tests
 * **Test 1:** *Does Variant B improve overall conversion vs Variant A?* → **Yes** — Variant B delivers a statistically significant lift in overall conversion.
@@ -558,8 +573,6 @@ To evaluate whether the lift from **Variant B** differs between **high-intent** 
 * Mid-funnel users respond just as well as high-intent users, highlighting the **scalable nature of the experiment effect**.
 * This further strengthens confidence in the conclusions from Tests 1–3 and supports potential **full rollout** of Variant B.
 
-**Note:** Logistic regression with interaction modeling was used here because the question involves **differential impact across segments**, making it the appropriate high-level statistical test.
-
 </details>
 
 ---
@@ -609,9 +622,6 @@ To evaluate which **UI elements** drive the highest conversion for each **user s
 * There is **no statistically significant lift** attributable to any specific UI element across segments.
 * Interaction between segment type and UI element is **not significant**, suggesting **no need for segment-specific UI customization** based on current data.
 * This insight helps guide design priorities: **focus on other factors** (e.g., copy, promotions, overall UX) rather than segment-specific UI tweaks.
-
-
-**Note:** Even though results were **not significant**, including this test **demonstrates familiarity with ANOVA and interaction modeling** — recruiters will see that you know how to structure, run, and interpret high-level analytical tests.
 
 </details>
 
