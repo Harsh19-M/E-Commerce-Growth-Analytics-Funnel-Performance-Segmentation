@@ -614,7 +614,7 @@ To evaluate which **UI elements** drive the highest conversion for each **user s
 </details>
 
 ## Final Insights
-* **Variant B is the statistically superior version** with consistent conversion uplift.
+* Variant B is the statistically superior version with consistent conversion uplift.
 * Purchase completion—not CTR—should drive experiment decisions.
 * Mid-funnel users represent the largest scalable revenue opportunity.
 * UI elements act as conversion multipliers, but effects are not segment-dependent.
