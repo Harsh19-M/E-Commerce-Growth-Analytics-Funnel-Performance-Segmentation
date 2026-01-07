@@ -355,11 +355,11 @@ Mid-funnel users + high-performing elements = largest business impact.
 ---
 
 ## Analytical Tests
-* **Test 1:** *Does Variant B improve overall conversion vs Variant A?* → **Yes** — Variant B delivers a statistically significant lift in overall conversion.
-* **Test 2:** *Does Variant B outperform A consistently across individual experiments?* → **No** — one experiment clearly drives the uplift, while others show mixed or no effects.
-* **Test 3:** *Is the conversion lift explained by user segments or behavior differences?* → **No** — conversion is independent of segments, and Variant B remains significant after controlling for behavior.
-* **Test 4:** *Does Variant B work better for high-intent users than mid-funnel users?* → **No** — Variant B’s lift is consistent across funnel segments with no interaction effect.
-* **Test 5:** *Do specific UI elements perform better for certain user segments?* → **No** — neither UI elements nor segment-specific interactions significantly affect conversion.
+* **Test 1:** Does Variant B improve overall conversion vs Variant A? → **Yes** — Variant B delivers a statistically significant lift in overall conversion.
+* **Test 2:** Does Variant B outperform A consistently across individual experiments? → **No** — one experiment clearly drives the uplift, while others show mixed or no effects.
+* **Test 3:** Is the conversion lift explained by user segments or behavior differences? → **No** — conversion is independent of segments, and Variant B remains significant after controlling for behavior.
+* **Test 4:** Does Variant B work better for high-intent users than mid-funnel users? → **No** — Variant B’s lift is consistent across funnel segments with no interaction effect.
+* **Test 5:** Do specific UI elements perform better for certain user segments? → **No** — neither UI elements nor segment-specific interactions significantly affect conversion.
 
 **NOTE:** Statistical methods including one-sided proportion z-tests, chi-square tests of independence, logistic regression (with and without interaction terms), and two-way ANOVA were selectively applied based on the analytical question being addressed.
 
