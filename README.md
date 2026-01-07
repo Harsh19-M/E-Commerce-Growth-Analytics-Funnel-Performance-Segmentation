@@ -670,8 +670,8 @@ To evaluate which **UI elements** drive the highest conversion for each **user s
 
 ## Deliverables
 
-* **Executive Deck:** [View Slides](https://docs.google.com/presentation/d/1h2wTZSiAYNN2xwqsaU1r2wTdwOEzAcLZYS8ufUnIp0g/present)
-* **GitHub README:** [Detailed Project Story & Analysis](your-readme-link-here)
+* **Executive Deck:** [View Slides](https://docs.google.com/presentation/d/12xXwo49_brnh2BfQ5SBEgyk6K4G4Cvf3LFnsGqw7ZvA/present?slide=id.g3a024b19907_2_96)
+* **GitHub README:** [Detailed Project Story & Analysis](https://github.com/Harsh19-M/E-Commerce-Growth-Analytics-AB-Testing-Segmentation/blob/main/README.md)
 * **Interactive Dashboard:** [View Power BI Dashboard](your-powerbi-link-here)
 
 ---
