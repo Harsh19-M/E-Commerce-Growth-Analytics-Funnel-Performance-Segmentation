@@ -407,9 +407,8 @@ Mid-funnel users + high-performing elements = largest business impact.
 - **Variant B delivers a statistically significant improvement in conversion rate over Variant A.**
 - This confirms that the website changes introduced in Variant B have a real, measurable positive impact on user purchasing behavior.
 
----
-
 <details>
+---
 
 <details> <summary><b> Analytical Test 2 — Experiment-Level Conversion Impact (A vs B) (Click to Expand)</b></summary>
 
@@ -447,10 +446,8 @@ Mid-funnel users + high-performing elements = largest business impact.
 * This aligns logically with **Test 1**, where Variant B outperformed A overall.
 * Recruiter-friendly: clear, concise, statistically correct, and highlights where rollout is justified vs where it’s inconclusive.
 
----
-
 <details>
-
+---
 
 <details> <summary><b> Analytical Test 3 — Segment-Level Dependency & Controlled Impact Analysis (Click to Expand)</b></summary>
 
@@ -519,10 +516,8 @@ While chi-square tests evaluate **pairwise dependency**, logistic regression is 
 * **Variant B’s uplift persists even after controlling for key behavioral factors**, confirming a true experiment-driven effect.
 * This strengthens confidence in Test 1 and Test 2 findings and rules out segment imbalance as the cause of the observed improvement.
 
----
-
 <details> 
-
+---
 
 <details> <summary><b> Analytical Test 4 — Variant B Impact Across Funnel Segments (Interaction with Intent Level) (Click to Expand)</b></summary>
 
@@ -572,8 +567,8 @@ To evaluate whether the lift from **Variant B** differs between **high-intent** 
 
 **Note:** Logistic regression with interaction modeling was used here because the question involves **differential impact across segments**, making it the appropriate high-level statistical test.
 
----
 <details>
+---
 
 
 <details> <summary><b> Analytical Test 5 — UI Element Effectiveness by Segment (Click to Expand)</b></summary>
@@ -624,8 +619,8 @@ To evaluate which **UI elements** drive the highest conversion for each **user s
 
 **Note:** Even though results were **not significant**, including this test **demonstrates familiarity with ANOVA and interaction modeling** — recruiters will see that you know how to structure, run, and interpret high-level analytical tests.
 
----
 <details> 
+---
 
 <details>
 
