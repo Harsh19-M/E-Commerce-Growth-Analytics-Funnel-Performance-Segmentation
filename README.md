@@ -368,7 +368,9 @@ Mid-funnel users + high-performing elements = largest business impact.
 </details>
 
 <details>
+  
 ---
+
 ## Analytical Tests
 * **Test 1:** *Does Variant B improve overall conversion vs Variant A?* → **Yes** — Variant B delivers a statistically significant lift in overall conversion.
 * **Test 2:** *Does Variant B outperform A consistently across individual experiments?* → **No** — one experiment clearly drives the uplift, while others show mixed or no effects.
