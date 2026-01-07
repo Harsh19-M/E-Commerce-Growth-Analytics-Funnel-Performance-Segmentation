@@ -366,8 +366,6 @@ Mid-funnel users + high-performing elements = largest business impact.
 </details> 
 
 </details>
-
-<details>
   
 ---
 
