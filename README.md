@@ -616,8 +616,8 @@ To evaluate which **UI elements** drive the highest conversion for each **user s
 
 ---
 <details>
-
 <details>
+---
 
 ---
 
