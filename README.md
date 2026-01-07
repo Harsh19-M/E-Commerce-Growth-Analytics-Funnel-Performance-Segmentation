@@ -666,3 +666,26 @@ To evaluate which **UI elements** drive the highest conversion for each **user s
 * Demonstrated end-to-end analytics maturity
 
 ---
+
+
+## Deliverables
+
+* **Executive Deck:** [View Slides](https://docs.google.com/presentation/d/1h2wTZSiAYNN2xwqsaU1r2wTdwOEzAcLZYS8ufUnIp0g/present)
+* **GitHub README:** [Detailed Project Story & Analysis](your-readme-link-here)
+* **Interactive Dashboard:** [View Power BI Dashboard](your-powerbi-link-here)
+
+---
+
+## Future Enhancements
+
+* **Multi-Variant & Sequential Funnel Testing:** Expand experiments beyond simple A/B to multi-variant testing or sequential funnel testing, capturing how UI/UX changes interact across multiple funnel stages.
+* **Real-Time Personalization Engine:** Leverage engagement and purchase-intent segments to dynamically serve the best variant or UI element per user session, maximizing mid-funnel conversion.
+* **Predictive Conversion Modeling:** Integrate machine learning models to forecast which users are likely to convert, enabling preemptive nudges, discounts, or targeted messaging.
+* **Automated Experiment Analysis Pipeline:** Build an ETL + analytics workflow to automatically update experiment results, segment-level lift, and funnel metrics daily, reducing manual analysis and improving speed-to-insight.
+* **Enhanced KPI Tracking & Alerts:** Implement automated dashboards that flag significant changes in CTR, ATC, or purchase lift by segment or variant, triggering actionable alerts for UX, marketing, or product teams.
+
+---
+
+*Developed by Harsh Mishra*
+*Open for Data Analyst / BI opportunities*
+
