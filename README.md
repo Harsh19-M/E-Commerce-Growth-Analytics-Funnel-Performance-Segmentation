@@ -615,6 +615,7 @@ To evaluate which **UI elements** drive the highest conversion for each **user s
 **Note:** Even though results were **not significant**, including this test **demonstrates familiarity with ANOVA and interaction modeling** — recruiters will see that you know how to structure, run, and interpret high-level analytical tests.
 
 ---
+<details>
 
 <details>
 
