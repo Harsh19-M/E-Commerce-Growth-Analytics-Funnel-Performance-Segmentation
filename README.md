@@ -361,7 +361,7 @@ Mid-funnel users + high-performing elements = largest business impact.
 * **Test 4:** *Does Variant B work better for high-intent users than mid-funnel users?* → **No** — Variant B’s lift is consistent across funnel segments with no interaction effect.
 * **Test 5:** *Do specific UI elements perform better for certain user segments?* → **No** — neither UI elements nor segment-specific interactions significantly affect conversion.
 
-**NOTE:** Advanced statistical methods (z-tests, chi-square tests, logistic regression, and interaction modeling) were selectively applied based on the analytical question being addressed, rather than used indiscriminately.
+**NOTE:** Statistical methods including one-sided proportion z-tests, chi-square tests of independence, logistic regression (with and without interaction terms), and two-way ANOVA were selectively applied based on the analytical question being addressed.
 
 
 <details>
