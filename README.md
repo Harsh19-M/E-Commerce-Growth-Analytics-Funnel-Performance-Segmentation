@@ -355,8 +355,14 @@ Mid-funnel users + high-performing elements = largest business impact.
 
 ---
 ## Analytical Tests
+* **Test 1:** *Does Variant B improve overall conversion vs Variant A?* → **Yes** — Variant B delivers a statistically significant lift in overall conversion.
+* **Test 2:** *Does Variant B outperform A consistently across individual experiments?* → **No** — one experiment clearly drives the uplift, while others show mixed or no effects.
+* **Test 3:** *Is the conversion lift explained by user segments or behavior differences?* → **No** — conversion is independent of segments, and Variant B remains significant after controlling for behavior.
+* **Test 4:** *Does Variant B work better for high-intent users than mid-funnel users?* → **No** — Variant B’s lift is consistent across funnel segments with no interaction effect.
+* **Test 5:** *Do specific UI elements perform better for certain user segments?* → **No** — neither UI elements nor segment-specific interactions significantly affect conversion.
 
 **NOTE:** Advanced statistical methods (z-tests, chi-square tests, logistic regression, and interaction modeling) were selectively applied based on the analytical question being addressed, rather than used indiscriminately.
+
 
 <details>
 <summary><b>Analytical Tests 1 to 5 (Click to Expand)</b></summary>
@@ -638,6 +644,23 @@ To evaluate which **UI elements** drive the highest conversion for each **user s
 | Experiment Strategy     | Focus on bottom-of-funnel metrics |
 | Customer Targeting      | Prioritize mid-funnel segments    |
 | Decision Confidence     | Results stable across controls    |
+
+---
+
+## Tools & Techniques
+
+| **Category** | **Used For** |
+|-------------|--------------|
+| SQL (PostgreSQL) | Multi-step CTEs, user-level aggregation, experiment joins, funnel metric construction |
+| Python (Pandas, NumPy, SciPy, Statsmodels) | Funnel analysis, segmentation, hypothesis testing, regression & ANOVA |
+| Statistical Testing | One-sided proportion z-tests, chi-square tests of independence, two-way ANOVA |
+| Predictive Modeling | Logistic regression, interaction-effect modeling |
+| Experiment Design | A/B testing, experiment validation, bias & exposure checks |
+| Funnel Framework | Visit → View → Add-to-Cart → Purchase analysis |
+| Project Planning & Objectives | Metric definition, funnel mapping, decision-driven testing |
+| Data Modeling & ETL | Analysis-ready table creation and reload for BI consumption |
+| Visualization (Minimal) | Tabular lift analysis and statistical result summaries |
+| BI & Reporting (Downstream) | Power BI dashboards for stakeholder communication (post-analysis) |
 
 ---
 
