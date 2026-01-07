@@ -597,7 +597,7 @@ To evaluate which **UI elements** drive the highest conversion for each **user s
 
 ### **Interpretation**
 
-* **Main effect of segment_group:** p = 0.282 → Not statistically significant. Segment type alone does **not significantly influence conversion**.
+* **Main effect of segment_group:** p = 0.282 → Not statistically significant. Segment type alone does **not significantly influence conversion**. 
 * **Main effect of element_tested:** p = 0.669 → Not statistically significant. No single UI element significantly outperforms others overall.
 * **Interaction effect (segment × element):** p = 0.418 → Not statistically significant. The effectiveness of UI elements does **not depend on the user segment**.
 * Overall, conversion differences are largely due to random variation rather than a systematic effect of segment or UI element.
