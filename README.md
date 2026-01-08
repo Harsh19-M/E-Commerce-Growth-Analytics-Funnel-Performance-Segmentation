@@ -490,7 +490,7 @@ While chi-square tests evaluate **pairwise dependency**, logistic regression is 
 
 **Statistical Test**
 * **Test Used:** Logistic regression (Maximum Likelihood Estimation)
-* **Metric:** Odds of conversion
+* **Metric:** Odds of conversion 
 
 **Key Result**
 | Variable       | Odds Ratio | 95% CI         | p-value    |
