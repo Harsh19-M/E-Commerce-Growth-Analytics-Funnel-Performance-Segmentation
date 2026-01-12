@@ -650,7 +650,7 @@ To evaluate which **UI elements** drive the highest conversion for each **user s
 | Python (Pandas, NumPy, SciPy, Statsmodels) | Funnel analysis, segmentation, hypothesis testing, regression & ANOVA |
 | Statistical Testing | One-sided proportion z-tests, chi-square tests of independence, two-way ANOVA |
 | Predictive Modeling | Logistic regression, interaction-effect modeling |
-| Experiment Design | A/B testing, experiment validation, bias & exposure checks |
+| Experiment Evaluation | experiment Assesment, validation, bias & exposure checks |
 | Funnel Framework | Visit → View → Add-to-Cart → Purchase analysis |
 | Project Planning & Objectives | Metric definition, funnel mapping, decision-driven testing |
 | Data Modeling & ETL | Analysis-ready table creation and reload for BI consumption |
