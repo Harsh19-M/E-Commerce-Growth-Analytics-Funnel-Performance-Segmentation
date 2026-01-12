@@ -15,7 +15,7 @@ End-to-End e-commerce Growth Analysis focused on understanding **Customer Behavi
   
 
 ## Tools & Skills
-**SQL(PostgreSQL)** | **Python(Cleaning, EDA, Research & Testing/Visulizations)** | **Power BI - Dashboard Tools & DAX** | **Data Modeling** | **ETL** | **Hypothesis Testing** | **Business Analysis** 
+**SQL(PostgreSQL)** | **Python(Cleaning, EDA, Research & Testing/Visulizations)** | **Power BI - Dashboard Tools & DAX** | **Data Modeling** | **ETL** | **Statistical Testing** | **Business Analysis** 
  
 
 
