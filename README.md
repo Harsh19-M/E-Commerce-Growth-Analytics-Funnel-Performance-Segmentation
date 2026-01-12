@@ -1,5 +1,5 @@
 # E-Commerce Growth Analytics: Funnel Performance & Customer Segmentation 
-End-to-end E-commerce Growth Analysis focused on understanding **Customer Behavior across the Conversion Funnel** and **Identifying High-Impact Growth Opportunities**. Analyzed user sessions, orders, and existing experiment data to evaluate funnel performance, engagement patterns, and conversion outcomes across customer segments. Using SQL, Python, and Power BI, built a consolidated, analysis-ready dataset and performed funnel, segmentation, and experiment result analysis to generate actionable insights for improving engagement, purchases, and revenue growth.
+End-to-End e-commerce Growth Analysis focused on understanding **Customer Behavior across the Conversion Funnel** and **Identifying High-Impact Growth Opportunities**. Analyzed user sessions, orders, and existing experiment data to evaluate funnel performance, engagement patterns, and conversion outcomes across customer segments. Using SQL, Python, and Power BI, built a consolidated, analysis-ready dataset and performed funnel, segmentation, and experiment result analysis to generate actionable insights for improving engagement, purchases, and revenue growth.
 
 **Note:** This project uses a mock dataset designed to simulate realistic performance. Company names and figures are for demonstration purposes only. 
  
