@@ -20,7 +20,7 @@ End-to-End e-commerce Growth Analysis focused on understanding **Customer Behavi
 
 
 **Live Dashboard:** [View Tableau Report](https://public.tableau.com/views/ECommerceExperimentsPerformance/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
-**Executive Deck:** [View Google Slides](https://docs.google.com/presentation/d/1h2wTZSiAYNN2xwqsaU1r2wTdwOEzAcLZYS8ufUnIp0g/present?slide=id.g3a024b19907_2_96)  
+**Executive Deck:** [View Presentation Slides](https://docs.google.com/presentation/d/1h2wTZSiAYNN2xwqsaU1r2wTdwOEzAcLZYS8ufUnIp0g/present?slide=id.g3a024b19907_2_96)  
 **Full Case Study Below ↓**
 
 
