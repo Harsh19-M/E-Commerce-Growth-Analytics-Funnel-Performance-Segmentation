@@ -67,7 +67,7 @@ Define Metrics, Map Funnel Stages **(Visit → View → ATC → Purchase)**, Seg
 
 ### **Data Cleaning & Loading – PostgreSQL → Python → PostgreSQL**
 - Started with clean base tables via PostgreSQL CTEs; added new metrics (`Click-through_Behaviour`, `Add_to_cart Rate`, `Conversion_Rate(Cmpltd_Pur-Ratio)`) and user segments (`Engagement_Level`, `PagesView_Level`, `ClickProd-Level`, `Purchase_Intent_Level`) in Python, then aggregated into **Analysis-LvL_table**.
-- Loaded the post-EDA final table (AggEtable_analysisLvL) back into PostgreSQL for Power BI dashboards, downstream analyses, and future modeling.
+- Loaded the post-EDA final table (AggEtable_analysisLvL) back into PostgreSQL for dashboards, downstream analyses, and future modeling.
 
 ---
 
