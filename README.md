@@ -66,8 +66,7 @@ Define Metrics, Map Funnel Stages **(Visit → View → ATC → Purchase)**, Seg
 - Decisions & Cleaning: Kept only sessions with valid experiment_id, handled nulls in orders, ensured unique users per variant, applied window functions for per-user session counts.
 - Final Aggregated Table: Joined cleaned CTEs to produce ecom.Agg_Etable with session, user, order, and experiment metrics — 1,563 analysis-ready rows for A/B testing and modeling.
 
-<details> <summary><b> Key EDA 1 to 6: Steps and Findigs in Detail (Click to Expand)</b></summary>
-
+<details> <summary><b>Key EDA 1–6: Aggregated Table SQL (Click to Expand)</b></summary>
 			```/* CREATING THE AGGREGATED TABLE */
 
 create table ecom.Agg_ExpDetailsTable  as 
@@ -144,8 +143,7 @@ rename to Agg_Etable
 select *
 from ecom.agg_etable;```
 
-	<details>
-
+</details>
 ### **Data Cleaning & Loading – PostgreSQL → Python → PostgreSQL**
 - Started with clean base tables via PostgreSQL CTEs; added new metrics (`Click-through_Behaviour`, `Add_to_cart Rate`, `Conversion_Rate(Cmpltd_Pur-Ratio)`) and user segments (`Engagement_Level`, `PagesView_Level`, `ClickProd-Level`, `Purchase_Intent_Level`) in Python, then aggregated into **Analysis-LvL_table**.
 - Loaded the post-EDA final table (AggEtable_analysisLvL) back into PostgreSQL for dashboards, downstream analyses, and future modeling.
