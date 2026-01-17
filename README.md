@@ -13,7 +13,7 @@ End-to-End e-commerce Growth Analysis focused on understanding **Customer Behavi
 - **Tableau Dashboards & Stakeholder Reporting:** Built Tableau dashboards using Python-engineered metrics to visualize funnel performance, experiment lift, and behavioral segments, with user-level drill-downs enabling traceability from insight to individual outcomes.
 
 ## Tools & Skills
-**SQL(PostgreSQL)** | **Python(Cleaning, EDA, Research & Testing/Visulizations)** | **Tableau Dashboard - Tools & Calculated Fields** | **Data Modeling** | **ETL** | **Statistical Testing** | **Business Analysis** 
+**PostgreSQL(Initial Exploration, Validiting Experiments, Aggregated Table)** | **Python(Cleaning, EDA, Research & Testing/Visulizations)** | **Tableau Dashboard - Tools & Calculated Fields** | **Data Modeling** | **ETL** | **Statistical Testing** | **Business Analysis** 
  
 
 
