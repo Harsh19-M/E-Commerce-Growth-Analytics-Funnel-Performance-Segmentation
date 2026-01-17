@@ -67,7 +67,8 @@ Define Metrics, Map Funnel Stages **(Visit → View → ATC → Purchase)**, Seg
 - Final Aggregated Table: Joined cleaned CTEs to produce ecom.Agg_Etable with session, user, order, and experiment metrics — 1,563 analysis-ready rows for A/B testing and modeling.
 
 <details> <summary><b> Final Step Created Aggregated Table SQL (Click to Expand)</b></summary>
-			/* CREATING THE AGGREGATED TABLE */
+	
+			```/* CREATING THE AGGREGATED TABLE */
 
 CREATE TABLE ecom.Agg_ExpDetailsTable AS 
 
@@ -122,7 +123,7 @@ ORDER BY Ec.experiment_id, Sc.version_seen, Uc.user_id ASC;
 ALTER TABLE ecom.Agg_ExpDetailsTable RENAME TO Agg_Etable;
 
 /* Quick validation */
-SELECT * FROM ecom.Agg_Etable;
+SELECT * FROM ecom.Agg_Etable;```
 
 
 </details>
