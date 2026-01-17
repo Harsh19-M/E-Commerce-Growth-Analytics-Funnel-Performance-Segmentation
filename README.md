@@ -68,7 +68,7 @@ Define Metrics, Map Funnel Stages **(Visit → View → ATC → Purchase)**, Seg
 
 <details> <summary><b> Key EDA 1 to 6: Steps and Findigs in Detail (Click to Expand)</b></summary>
 
-			/* CREATING THE AGGREGATED TABLE */
+			```/* CREATING THE AGGREGATED TABLE */
 
 create table ecom.Agg_ExpDetailsTable  as 
 
@@ -142,9 +142,9 @@ rename to Agg_Etable
 
 		/* QUICK CHECK */
 select *
-from ecom.agg_etable;
+from ecom.agg_etable;```
 
-<details>
+	<details>
 
 ### **Data Cleaning & Loading – PostgreSQL → Python → PostgreSQL**
 - Started with clean base tables via PostgreSQL CTEs; added new metrics (`Click-through_Behaviour`, `Add_to_cart Rate`, `Conversion_Rate(Cmpltd_Pur-Ratio)`) and user segments (`Engagement_Level`, `PagesView_Level`, `ClickProd-Level`, `Purchase_Intent_Level`) in Python, then aggregated into **Analysis-LvL_table**.
