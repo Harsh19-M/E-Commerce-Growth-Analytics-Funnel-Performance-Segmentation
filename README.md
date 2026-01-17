@@ -94,9 +94,9 @@ orders_clean AS (
 experiments_clean AS (
     SELECT experiment_id, element_tested, start_date, end_date, effect_on_conv
     FROM ecom.experiments
-)
+)```
 
-SELECT 
+```SELECT 
     Ec.experiment_id, Ec.element_tested,
     Sc.version_seen AS "Experiment Version",
     Uc.user_id, Uc.customer_name, Uc.signup_date, Uc.country, Uc.city, Uc.state, Uc.postal_code,
